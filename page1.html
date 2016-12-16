@@ -1,6 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+>
 <html>
 <head>
+<title>example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style>
 .webclass{
 	background-color:black;
@@ -11,13 +14,26 @@
 	font-size: 40px;
 }
 #container{width:1300px;}
-#header{background-color: darkslategray;height:130px;font-size:16px;}
-#paragraph{background-color: lightseagreen;height:550px;text-align: center;font-size:30px;}
-#leftside{height:350px;width:310px;float:left;}
-#left2{height:350px;width:310px;float:left;}
-#left3{height:350px;width:310px;float:left;}
-#left4{height:350px;width:310px;float:left;}
-#foot1{background-color: powderblue;height:600px;clear:both;text-align: center;}
+#header{background-color: darkslategray;font-size:16px; text-align: center;padding-bottom: 20px;}
+#paragraph{background-color: lightseagreen;text-align: center;font-size:30px;padding:10px;}
+#leftside{height:350px;width:25%;float:left;}
+#left2{height:350px;width:25%;float:left;}
+#left3{height:350px;width:25%;float:left;}
+#left4{height:350px;width:25%;float:left;}
+#foot1{background-color: powderblue;height:600px;clear:both;text-align:center;}
+.webfoot{
+	background-color:yellow;
+	width:50%;
+	float: left;
+
+}
+.webfoot2{
+	clear:both;
+	background-color: lightseagreen;
+	width:40%;
+	height: 50px;
+	text-align:center;
+}
 
 </style>
 </head>
@@ -30,18 +46,20 @@
 
 <div id="header">
 	<br/>
-	<h1 style="color:aliceblue; text-align: center">Color</h1>
-	<a href="./index.html" style="float:left;color:lightgray"><b>My page</b></a>
+	<h1 style="color:aliceblue;">HTML+CSS Learning Note</h1>
+	<a href="./index.html" style="color:lightgray" target="iframe_a"><b>My page</b></a>
+	<br/><br/>
+	<iframe style="background-color: white ;width:50%;height:300px;" name="iframe_a" src="./page1.html"></iframe>
 	</div>
 
 <div id="paragraph">
-	<br/>
-	<p>
-		<img src="photo.jpg">
+		<h1 style="color:aliceblue">Basic</h1>
+		<p style="color:white;font-size: 20px;text-align: left">
+		1. Block-level element: 指能够独立存在, 一般的块级元素之间以换行(如一个段落结束后另起一行)分隔. 常用的块级元素包括: p, h1~h6, div, ul等;
 		<br/>
-
-		<h1 style="color:aliceblue">First line</h1>
-		<p style="color:white">second line</p>
+		2. Inline element: 指依附其他块级元素存在, 紧接于被联元素之间显示, 而不换行. 常用的内联元素包括: img, span, li, br等;
+		<br/>
+		3. Top-level element: 包括html, body, frameset, 表现如Block-level element, 属于高级块级元素.
 		</p>
 		</div>
 <br/>
@@ -75,15 +93,15 @@
 		</h1>
 		</a>
 
-		<div style="background-color:powderblue;width:450px;height:400px;float:left">
+		<!--<div style="background-color:powderblue;width:450px;height:400px;float:left">
 
-		</div>
+		</div>-->
 
-		<div style="background-color:orange;width:400px;height:400px;float:left">
+		<div style="background-color:orange;margin: 0px auto;width:400px;">
 		<img src="6.jpg" height="200px" style="text-align:left">
-		
-		<form action="MAILTO:ovosophia@hotmail.com" method="post" enctype="test/plain">
 		<h3>send emial to sophia</h3>
+		<form action="MAILTO:ovosophia@hotmail.com" method="post" enctype="test/plain">
+		<div style="margin:0px auto;width:300px;text-align: right">
 		your name:
 		<input type="text" name="name" value="yourname" size="20">
 		<br/>
@@ -96,8 +114,21 @@
 		<br/>
 		<input type="submmit" value="send">
 		<input type="reset" value="rewrite">
-		</form>
 		</div>
+		</form>
+		
+		<br/>
+		<button type="button">显示中文</button> 
+		<p>待实现</p>
+		</div>
+</div>
+
+<div class="webfoot">
+<p> this width is 50%</p>
+</div>
+
+<div class="webfoot2" style="margin:0px auto;">
+
 </div>
 
 </body>
